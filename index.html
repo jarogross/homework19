@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Textový analyzátor</title>
+
+</head>
+<body>
+  <h1>Textový analyzátor</h1>
+  
+  <textarea id="text" rows="6" cols="40"></textarea>
+  <button onclick="analyzaTextu()">Spustiť analýzu</button>
+  
+  <h2>Vyhľadávanie</h2>
+  <input type="text" id="vyhladajText" placeholder="Zadajte hľadaný text">
+  <button onclick="hladajText()">Hľadaj</button>
+  <div id="vysledok"></div>
+  
+  <h2>Výsledky analýzy</h2>
+  <div class="result">Dĺžka textu: <span id="dlzkaTextu"></span></div>
+  <div class="result">Dĺžka textu bez medzier: <span id="dlzkaTextuBezMedzier"></span></div>
+  <div class="result">Počet číslic: <span id="pocetCislic"></span></div>
+  <div class="result">Najdlhšie slovo: <span id="najdlhsieSlovo"></span></div>
+  <div class="result">Počet písmen v najdlhšom slove: <span id="dlzkaNajdlhsiehoSlova"></span></div>
+  
+  <h2>Šifrovanie textu</h2>
+  <button onclick="sifrujText()">Šifrovať text</button>
+  <div style="background-color: red;" id="sifrovanyText"></div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
